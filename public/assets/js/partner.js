@@ -1,4 +1,4 @@
-  // Your web app's Firebase configuration
+ // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
     apiKey: "AIzaSyBDugoQX3XTgl32seFEtimxJ73yC38MTp0",
@@ -13,26 +13,29 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-
-//---------------------------------------Send Mentor----------------------------------------------------//
+  
+//--------------------------------------- Send Partner ----------------------------------------------------//
   //Reference for form collection(3)
-  let mentorDb = firebase.database().ref('mentor');
+  let partnerDb = firebase.database().ref('partner');
 
 //listen for submit event//
-document.getElementById('mentorform').addEventListener('submit', submitMentor);
+document.getElementById('partnerform').addEventListener('submit', submitPartner);
 
 //Submit form
-function submitMentor(e) {
+function submitPartner(e) {
   e.preventDefault();
   // Get Values from the DOM
   let name = document.querySelector('#name').value;
   let email = document.querySelector('#email').value;
   let phone = document.querySelector('#phone').value;
-  let location = document.querySelector('#location').value;
-  let age = document.querySelector('#age').value;
+  let gender = document.querySelector('#gender').value;
+  let address = document.querySelector('#address').value;
+  let city = document.querySelector('#city').value;
+  let country = document.querySelector('#country').value;
+  
 
   // send mentor values
-  sendMentor(name, email, phone, location, age)
+  sendPartner(name, email, phone, gender, address, city, country)
 
   //Show Alert Message
   document.querySelector('.alert').style.display = 'block';
@@ -42,19 +45,20 @@ function submitMentor(e) {
   }, 7000);
 
    //Form Reset After Submission
-   document.getElementById('mentorform').reset();
+   document.getElementById('partnerform').reset();
 
 }
 
 //Send Message to Firebase(4)
-function sendMentor(name, email, phone, location, age) {
-    let newMentorDb = mentorDb.push();
-    newMentorDb.set({
+function sendPartner(name, email, phone, gender, address, city, country) {
+    let newPartnerDb = partnerDb.push();
+    newPartnerDb.set({
       name: name,
       email: email,
       phone: phone,
-      location: location,
-      age: age
+      gender: gender,
+      address: address,
+      city: city,
+      country: country
     });
-}
-
+  }

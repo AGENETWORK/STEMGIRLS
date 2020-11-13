@@ -2156,7 +2156,7 @@ hr {
 
 .page-footer-section {
   position: relative;
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 20px;
   background-color: #F0EEF5;
 }
@@ -2479,8 +2479,8 @@ hr {
 
 .team-avatar {
   display: inline-block;
-  width: 75px;
-  height: 75px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -2491,7 +2491,7 @@ hr {
 }
 
 .team-name {
-  color: #383340;
+  color: #ffffff;
   margin-bottom: 0;
 }
 

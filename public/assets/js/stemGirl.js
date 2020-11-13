@@ -14,15 +14,15 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-//---------------------------------------Send Mentor----------------------------------------------------//
+//---------------------------------------Send StemGirl----------------------------------------------------//
   //Reference for form collection(3)
-  let mentorDb = firebase.database().ref('mentor');
+  let stemGirlDb = firebase.database().ref('stemGirl');
 
 //listen for submit event//
-document.getElementById('mentorform').addEventListener('submit', submitMentor);
+document.getElementById('stemGirlForm').addEventListener('submit', submitStemGirl);
 
 //Submit form
-function submitMentor(e) {
+function submitStemGirl(e) {
   e.preventDefault();
   // Get Values from the DOM
   let name = document.querySelector('#name').value;
@@ -30,9 +30,12 @@ function submitMentor(e) {
   let phone = document.querySelector('#phone').value;
   let location = document.querySelector('#location').value;
   let age = document.querySelector('#age').value;
+  let school = document.querySelector('#school').value;
+  let grade = document.querySelector('#grade').value;
+  let skills = document.querySelector('#skills').value;
 
   // send mentor values
-  sendMentor(name, email, phone, location, age)
+  sendStemGirl(name, email, phone, location, age, school, grade, skills)
 
   //Show Alert Message
   document.querySelector('.alert').style.display = 'block';
@@ -42,19 +45,22 @@ function submitMentor(e) {
   }, 7000);
 
    //Form Reset After Submission
-   document.getElementById('mentorform').reset();
+   document.getElementById('stemGirlForm').reset();
 
 }
 
 //Send Message to Firebase(4)
-function sendMentor(name, email, phone, location, age) {
-    let newMentorDb = mentorDb.push();
-    newMentorDb.set({
+function sendStemGirl(name, email, phone, location, age, school, grade, skills) {
+    let newStemGirlDb = stemGirlDb.push();
+    newStemGirlDb.set({
       name: name,
       email: email,
       phone: phone,
       location: location,
-      age: age
+      age: age,
+      school: school, 
+      grade: grade, 
+      skills: skills
     });
 }
 

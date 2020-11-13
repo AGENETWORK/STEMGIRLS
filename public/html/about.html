@@ -6,13 +6,13 @@
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta name="description" content="Mobile Application HTML5 Template">
+  <meta name="description" content="STEM Girls">
 
-  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  <meta name="copyright" content="https://agenetwork.org/">
 
-  <title>Mobster - One page app template</title>
+  <title>STEM Girls</title>
 
-  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/img/stem-logo.png" type="image/x-icon">
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -23,13 +23,15 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
 
   <link rel="stylesheet" href="../assets/css/mobster.css">
-</head>
-<body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-floating">
+  <script src="../assets/js/firebase.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light navbar-floating">
   <div class="container">
     <a class="navbar-brand" href= "../index.html">
-      <img src="../assets/favicon-light.png" alt="" width="40">
+        <img src="../assets/img/stem-logo.png" alt="" width="60" height="50">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -38,33 +40,28 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href= "../index.html">Home</a>
+            <a class="nav-link" href= "../index.html">Home</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
         </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="blog.html">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="updates.html">What's New</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-      <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Become a Member</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item active" href="mentor.html">Mentor</a>
-            <a class="dropdown-item" href="partner.html">Partner</a>
-            <a class="dropdown-item" href="ambassador.html">Ambassador</a>
-            <a class="dropdown-item" href="donor.html">Donor</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="stemGirl.html">Become a STEM Girl</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQs</a>
+        </li>
+         
+        <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Become a Member</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item active" href="mentor.html">Mentor</a>
+              <a class="dropdown-item" href="partner.html">Partner</a>
+              <a class="dropdown-item" href="ambassador.html">Ambassador</a>
+              <a class="dropdown-item" href="../404.html">Donor</a>
+            </div>
+          </li>
       </ul>
-      <div class="ml-auto my-2 my-lg-0">
-        <button class="btn btn-primary rounded-pill">Download Now</button>
-      </div>
     </div>
   </div>
 </nav>
@@ -94,99 +91,58 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="card-page">
-          <h5 class="fg-primary">Stories</h5>
+          <h5 class="fg-primary">Want to know more !!!</h5>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est</p>
-          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+          <p>African Girls Empowerment Network is a registered young feminine charity/ non-profit organisation, 
+            which is committed to advancing <b>gender equality</b> in girls' education, promote young womens bodily and 
+            economic/ leadership rights in Africa for a Fairer Future.</p>
+          <p><b>Our STEM GIRLS STEM_initiative</b> seeks to empower girls and advance gender equality in Girls Education 
+            particularly in the field of Science & Technology. The initiative lays the foundation for tomorrow's female 
+            medical doctors, female engineers among others and its programs aims to improve girls academic performance/ 
+            grades in STEM subjects and increase their enrolment in STEM majors in the Tertiary institutions.</p>
+          <p><b>Join us and build a brighter future for African girls Together.</b></p>  
 
           <!-- Video -->
-          <div class="text-center py-5">
-            <embed class="embed-video" src="https://www.youtube.com/embed/k1D0_wFlXgo?list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX">
+          <div class="text-center embed-responsive embed-responsive-16by9 py-5">
+            <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTheAGENetwork%2Fvideos%2F364180060789408%2F&show_text=0&width=476" width="50%" height="80%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>          
           </div>
-
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </div>
+            <p>For more information visit our website <a href="http://www.agenetwork.org/"><b>www.agenetwork.org</b></a></p>
+          </div>
         <div class="card-page mt-3">
-          <h5 class="fg-primary">Meet Our Teams</h5>
+          <h5 class="fg-primary">Mission</h5>
           <hr>
-
-          <div class="row justify-content-center">
-            <div class="col-lg-3 py-3">
-              <div class="team-item">
-                <div class="team-avatar">
-                  <img src="../assets/img/person/person_1.png" alt="">
-                </div>
-                <h5 class="team-name">Sugar Elliot</h5>
-                <span class="fg-gray fs-small">Creative Director</span>
-              </div>
-            </div>
-            <div class="col-lg-3 py-3">
-              <div class="team-item">
-                <div class="team-avatar">
-                  <img src="../assets/img/person/person_2.png" alt="">
-                </div>
-                <h5 class="team-name">John Doe</h5>
-                <span class="fg-gray fs-small">UI/UX Designer</span>
-              </div>
-            </div>
-            <div class="col-lg-3 py-3">
-              <div class="team-item">
-                <div class="team-avatar">
-                  <img src="../assets/img/person/person_3.png" alt="">
-                </div>
-                <h5 class="team-name">Ellysa</h5>
-                <span class="fg-gray fs-small">Product Manager</span>
-              </div>
-            </div>
-          </div>
+          <p>Our core mission is to empower, support and protect young women and girls to advance their 
+            bodily rights, leadership, economic and financial inclusion in Africa and to foster them to become 
+            inextricable partners in the sustainable development of our society for our generation and most importantly the generations next.
+          </p>
         </div>
-        <div class="card-page mt-3">
-          <h5 class="fg-primary">Partners</h5>
-          <hr>
 
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center align-items-center mt-5">
-            <div class="p-3">
-              <div class="img-place client-img">
-                <img src="../assets/img/clients/alter_sport.png" alt="">
-              </div>
-            </div>
-            <div class="p-3">
-              <div class="img-place client-img">
-                <img src="../assets/img/clients/cleaning_service.png" alt="">
-              </div>
-            </div>
-            <div class="p-3">
-              <div class="img-place client-img">
-                <img src="../assets/img/clients/creative_photo.png" alt="">
-              </div>
-            </div>
-            <div class="p-3">
-              <div class="img-place client-img">
-                <img src="../assets/img/clients/global_tv.png" alt="">
-              </div>
-            </div>
-            <div class="p-3">
-              <div class="img-place client-img">
-                <img src="../assets/img/clients/net_sport_tv.png" alt="">
-              </div>
-            </div>
-            <div class="p-3">
-              <div class="img-place client-img">
-                <img src="../assets/img/clients/news_digital_tv.png" alt="">
-              </div>
-            </div>
-            <div class="p-3">
-              <div class="img-place client-img">
-                <img src="../assets/img/clients/spa_beauty.png" alt="">
-              </div>
-            </div>
-            <div class="p-3">
-              <div class="img-place client-img">
-                <img src="../assets/img/clients/trivier_group.png" alt="">
-              </div>
-            </div>
-          </div>
+        <div class="card-page mt-3">
+          <h5 class="fg-primary">Vision</h5>
+          <hr>
+          <p>Become Africa’s No.1 gender equality movement, young women and girls’ capacity development, 
+            leadership and economic empowerment hub.
+          </p>
+        </div>
+
+        <div class="card-page mt-3">
+          <h5 class="fg-primary">Core Values</h5>
+          <hr>
+     <ul>
+       <li>Focus</li>
+       <li>Integrity</li>
+       <li>Professionalism</li>
+       <li>Innovation</li>
+       <li>Team Work</li>
+     </ul>
+        </div>
+
+        <div class="card-page mt-3">
+          <h5 class="fg-primary">Target Focus</h5>
+          <hr>
+          <p>Our primary focus is the young women and girls of Africa, specifically those who are orphaned,
+             vulnerable, disabled and/or economically-disadvantaged.
+          </p>
         </div>
       </div>
     </div>
@@ -199,33 +155,22 @@
 <div class="page-footer-section bg-dark fg-white">
   <div class="container">
     <div class="row mb-5 py-3">
-      <div class="col-sm-6 col-lg-2 py-3">
-        <h5 class="mb-3">Pages</h5>
+      <div class="col-sm-6 col-lg-4 py-3">
+        <h5 class="mb-3">Stem Girls</h5>
         <ul class="menu-link">
-          <li><a href="#" class="">Features</a></li>
-          <li><a href="#" class="">Customers</a></li>
-          <li><a href="#" class="">Pricing</a></li>
-          <li><a href="#" class="">GDPR</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-6 col-lg-2 py-3">
-        <h5 class="mb-3">Company</h5>
-        <ul class="menu-link">
-          <li><a href="#" class="">About</a></li>
-          <li><a href="#" class="">Team</a></li>
-          <li><a href="#" class="">Leadership</a></li>
-          <li><a href="#" class="">Careers</a></li>
-          <li><a href="#" class="">HIRING!</a></li>
+          <li><a href="#" class="">Contact Us</a></li>
+          <li><a href="mailto:stemgirls@agenetwork.org" class="">stemgirls@agenetwork.org</a></li>
+          <li><a href="tel:+234 803 315 0904" class="">+234 803 315 0904</a></li>
+          <li><a href="tel:+234 809 486 0266" class="">+234 809 486 0266</a></li>
         </ul>
       </div>
       <div class="col-md-6 col-lg-4 py-3">
-        <h5 class="mb-3">Contact</h5>
+        <h5 class="mb-3">African Girls Empowerment Network</h5>
         <ul class="menu-link">
           <li><a href="#" class="">Contact Us</a></li>
-          <li><a href="#" class="">Office Location</a></li>
-          <li><a href="#" class="">hello@mobster.com</a></li>
-          <li><a href="#" class="">support@macodeid.com</a></li>
-          <li><a href="#" class="">+808 11233 900</a></li>
+          <li><a href="#" class="">44, Idiroko Road, Off Lagos Abeokuta Expressway, Sango Ota, Ogun, Nigeria.</a></li>
+          <li><a href="mailto:info@agenetwork.org" class="">info@agenetwork.org</a></li>
+          <li><a href="tel:+234 806 276 2068" class="">+234 806 276 2068</a></li>
         </ul>
       </div>
       <div class="col-md-6 col-lg-4 py-3">
@@ -242,10 +187,10 @@
 
         <!-- Social Media Button -->
         <div class="mt-4">
-          <a href="#" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-facebook"></span></a>
-          <a href="#" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-twitter"></span></a>
-          <a href="#" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-instagram"></span></a>
-          <a href="#" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-google"></span></a>
+          <a href="https://www.facebook.com/TheAGENetwork/" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-facebook"></span></a>
+          <a href="https://twitter.com/TheAGENetwork/" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-twitter"></span></a>
+          <a href="https://www.instagram.com/theagenetwork/" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-instagram"></span></a>
+          <a href="mailto:girlsnetworknigeria@gmail.com/" class="btn btn-fab btn-primary fg-white"><span class="mai-logo-google"></span></a>
         </div>
       </div>
     </div>
@@ -256,9 +201,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 py-2">
-        <img src="../assets/favicon-light.png" alt="" width="40">
+        <img src="../assets/img/age_logo.png" alt="" width="40">
         <!-- Please don't remove or modify the credits below -->
-        <p class="d-inline-block ml-2">Copyright &copy; <a href="https://www.macodeid.com/" class="fg-white fw-medium">MACode ID</a>. All rights reserved</p>
+        <p class="d-inline-block ml-2">2020 Copyright &copy; <a href="https://agenetwork.org//" 
+            class="fg-white fw-medium">AGE Network</a>. All rights reserved</p>
       </div>
       <div class="col-12 col-md-6 py-2">
         <ul class="nav justify-content-end">
@@ -280,6 +226,18 @@
 <script src="../assets/vendor/wow/wow.min.js"></script>
 
 <script src="../assets/js/mobster.js"></script>
+
+<script src="../assets/js/google-maps.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+<script src="../assets/js/app.js"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
 
 </body>
 </html>
