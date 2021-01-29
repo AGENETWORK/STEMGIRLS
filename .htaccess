@@ -5,6 +5,6 @@ RewriteBase /
 RewriteRule ^index.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /public/index.html [L]
+RewriteRule ^./?$ . /public/index.html [L]
 </IfModule>
 # END WordPress
