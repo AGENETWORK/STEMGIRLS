@@ -2935,6 +2935,12 @@ fieldset:disabled a.btn {
   border-color: #f8f9fa;
 }
 
+.btn-orange {
+  color: #212529;
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
 .btn-light:hover {
   color: #212529;
   background-color: #e2e6ea;
